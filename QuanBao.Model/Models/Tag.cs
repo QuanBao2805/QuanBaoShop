@@ -13,13 +13,12 @@ namespace QuanBao.Model.Models
     {
         [Key]
         [MaxLength(50)]
+        [Column(TypeName = "varchar")]
         public string ID { get; set; }
 
-        [Key]
         [MaxLength(50)]
         public string Name { get; set; }
 
-        [Key]
         [MaxLength(50)]
         public string Type { get; set; }
     }

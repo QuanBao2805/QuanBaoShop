@@ -7,11 +7,12 @@ namespace QuanBao.Model.Models
     public class ProductTag
     {
         [Key]
+        [Column(Order=1)]
         public int ProductID { get; set; }
 
         [Key]
         [MaxLength(50)]
-        [Column(TypeName ="Varchar")]
+        [Column(TypeName ="Varchar",Order =2)]
         public string TagID { get; set; }
 
         [ForeignKey("ProductID")]
