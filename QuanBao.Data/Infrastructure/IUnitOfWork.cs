@@ -1,0 +1,7 @@
+﻿namespace QuanBao.Data.Infrastructure
+{
+    public interface IUnitOfWork
+    {
+        void Commit();
+    }
+}
